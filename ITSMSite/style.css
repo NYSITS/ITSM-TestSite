@@ -1,0 +1,233 @@
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.main-container {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.dark {
+  padding: 5px;
+  background: #393e51;
+  color: #FFFFFF;
+  margin-top: 40px;
+  text-align: center;
+}
+
+header {
+  background: #393e51;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 70px;
+}
+
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header .branding {
+  float: left;
+}
+
+header .branding h1 {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header .highlight {
+  color: #E8491D;
+  font-weight: bold;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+.showcase {
+  min-height: 120px;
+  margin-top: 15px;
+  background: url('img/Steps.png') no-repeat center;
+}
+
+button.accordion {
+  background-color: #FFFFFF;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #DDDDDD;
+  outline: none;
+  transition: 0.4s;
+}
+
+button.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777777;
+  float: right;
+  margin-left: 5px;
+}
+
+button.accordion.active, button.accordion:hover {
+  background-color: #DDDDDD;
+}
+
+button.accordion.active:after {
+  content: '\2796';
+}
+
+button.attach-items {
+  float: right;
+  background: #393e51;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: 1px solid #393e51;
+  padding: 10px;
+  cursor: pointer;
+}
+
+div.panel {
+  padding: 0 18px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  display: none;
+}
+
+div.panel p.underline {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div.panel span.red {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+div.panel span.blue {
+  font-weight: bold;
+  color: #0000ff;
+}
+
+div.panel p.bold {
+  font-weight: bold;
+}
+
+div.panel li {
+  list-style: none;
+}
+
+div.panel span.grey {
+  font-weight: bold;
+  color: #8c8c8c;
+}
+
+div.panel span.bold {
+  font-weight: bold;
+}
+
+div.panel div.engineering-1 {
+  min-height: 300px;
+  border-top: 1px solid #DDDDDD;
+  width: 100%;
+}
+
+div.engineering-1 i {
+  font-size: 10px;
+  color: #ff0000;
+}
+
+input[type="text"] {
+  margin-top: -10px;
+  padding: 4px;
+  height: 15px;
+  width: 95%;
+}
+
+div.panel div.engineering-2 {
+  min-height: 200px;
+  border-top: 1px solid #DDDDDD;
+  width: 100%;
+}
+
+div.panel div.engineering-3 {
+  min-height: 500px;
+  border-top: 1px solid #DDDDDD;
+  width: 100%;
+}
+
+div.panel div.choose-service {
+  min-height: 300px;
+  border-top: none;
+  width: 100%;
+}
+
+div.panel div.review-order {
+  min-height: 300px;
+  border-top: none;
+  width: 100%;
+}
+
+div.panel div.complete-order {
+  min-height: 300px;
+  border-top: none;
+  width: 100%;
+}
+
+article.main-col {
+  margin-top: 50px;
+  float: left;
+  width: 65%;
+}
+
+aside.sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+div.cart {
+  padding-top: 10px;
+  background: #FFFFFF;
+  text-align: center;
+  border: 1px solid #DDDDDD;
+  min-height: 225px;
+}
+
+div.price {
+  padding-top: 10px;
+  padding-right: 25px;
+  background: #FFFFFF;
+  text-align: right;
+  border: 1px solid #DDDDDD;
+  min-height: 50px;
+}
+
+span.shopping-price {
+  font-size: 25px;
+  font-weight: bold;
+}

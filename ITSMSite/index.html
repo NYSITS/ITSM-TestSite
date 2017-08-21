@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ITSM Shopping Cart</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="branding">
+        <h1><span class="highlight">ITSM</span> Service Catalog</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Tips & Tricks</a></li>
+          <li><a href="#">ITSM Classic</a></li>
+          <li><a href="#">Request Something</a></li>
+          <li><a href="#">Knowledge Base</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="showcase">
+    <div class="container">
+    </div>
+  </section>
+
+  <section class="main">
+    <div class="main-container">
+      <article class="main-col">
+        <button class="accordion">Engineering Intake Form</button>
+        <div class="panel">
+          <p class="underline"><u>Please Note:</u><button class="attach-items"><i class="fa fa-paperclip"> Attach Items</i></button></p>
+          <p>The application must exist within ITSM before this request can be submitted. <br>
+            The project selected must be in an Execution Phase in order to fulfill Infrastructure Service Requests.<br>
+            <span class="red">Please attach the<span class="blue"> Data Classification, Server Diagram and System Context Diagram</span> before you submit this request!</span>
+          </p>
+          <p class="bold"><i>If critical information is not filled out your request may be delayed or rejected pending additional information.</i></p>
+            <ul>
+              <li><span class="grey">Service Item Description:</span> Use this Request for Engineering Intake</li>
+              <li><span class="grey">Service Item Owner:</span> David Jenkins</li>
+              <li><span class="grey">Service Item Owner Phone:</span> 518-473-8219</li>
+              <li><span class="grey">Service Item Owner Email:</span> David.Jenkins@its.ny.gov</li>
+              <li><span class="grey">Service Level Objective:</span> The base Service Level Objective is to respond to an engineering request within<span class="bold"> 5 Business Days</span></li>
+              <li><span class="grey">In Scope Items:</span> Requesting build and deployment of Enterprise Services</li>
+              <li><span class="grey">Out of Scope Items:</span> Customer Network Request, Technology Advisments and Procument of Equipment</li>
+              <li><span class="grey">Availability:</span> This form is limited to authorized requestors only</li>
+              <li><span class="grey">Recovery Time Objective:</span> Dependent on Service Now Availability</li>
+              <li><span class="grey">Supporting Services Offered:</span> None</li>
+            </ul>
+            <div class="engineering-1">
+              <h5><i class="fa fa-asterisk"></i> Short Description (Max 80 Characters):</h5>
+              <form>
+                <input type="text">
+              </form>
+            </div>
+            <div class="engineering-2">
+
+            </div>
+            <div class="engineering-2">
+
+            </div>
+            <div class="engineering-2">
+
+            </div>
+            <div class="engineering-3">
+
+            </div>
+            <div class="engineering-3">
+
+            </div>
+        </div>
+
+        <button class="accordion">Choose Service Offering</button>
+        <div class="panel">
+          <div class="choose-service">
+
+          </div>
+        </div>
+
+        <button class="accordion">Review Your Order</button>
+        <div class="panel">
+          <div class="review-order">
+
+          </div>
+        </div>
+
+        <button class="accordion">Complete Your Order</button>
+        <div class="panel">
+          <div class="complete-order">
+
+          </div>
+        </div>
+      </article>
+
+      <aside class="sidebar">
+        <div class="dark">
+          <h2><i class="fa fa-shopping-cart"> Shopping Cart</i></h2>
+        </div>
+        <div class="cart">
+          <h3>There Are No Items In Your Cart</h3>
+        </div>
+        <div class="price">
+          <h3>Total Price: <span class="shopping-price">$0.00</span></h3>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        this.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
