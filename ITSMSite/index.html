@@ -35,82 +35,233 @@
       <article class="main-col">
         <button class="accordion">Engineering Intake Form</button>
         <div class="panel">
-          <p class="underline"><u>Please Note:</u><button class="attach-items"><i class="fa fa-paperclip"> Attach Items</i></button></p>
-          <p>The application must exist within ITSM before this request can be submitted. <br>
-            The project selected must be in an Execution Phase in order to fulfill Infrastructure Service Requests.<br>
-            <span class="red">Please attach the<span class="blue"> Data Classification, Server Diagram and System Context Diagram</span> before you submit this request!</span>
-          </p>
-          <p class="bold"><i>If critical information is not filled out your request may be delayed or rejected pending additional information.</i></p>
-            <ul>
-              <li><span class="grey">Service Item Description:</span> Use this Request for Engineering Intake</li>
-              <li><span class="grey">Service Item Owner:</span> David Jenkins</li>
-              <li><span class="grey">Service Item Owner Phone:</span> 518-473-8219</li>
-              <li><span class="grey">Service Item Owner Email:</span> David.Jenkins@its.ny.gov</li>
-              <li><span class="grey">Service Level Objective:</span> The base Service Level Objective is to respond to an engineering request within<span class="bold"> 5 Business Days</span></li>
-              <li><span class="grey">In Scope Items:</span> Requesting build and deployment of Enterprise Services</li>
-              <li><span class="grey">Out of Scope Items:</span> Customer Network Request, Technology Advisments and Procument of Equipment</li>
-              <li><span class="grey">Availability:</span> This form is limited to authorized requestors only</li>
-              <li><span class="grey">Recovery Time Objective:</span> Dependent on Service Now Availability</li>
-              <li><span class="grey">Supporting Services Offered:</span> None</li>
-            </ul>
-            <div class="engineering-1">
-              <h5><i class="fa fa-asterisk"></i> Short Description (Max 80 Characters):</h5>
-              <form>
-                <input type="text">
-              </form>
-            </div>
-            <div class="engineering-2">
+          <div class="form-container">
+            <div class="wrapper">
+              <div class="form-note">
+                <div class="attach">
+                  <h2><u>Please Note:</u></h2>
+                  <button><i class="fa fa-paperclip"></i> Attach Items</button>
+                </div>
+                <ul>
+                  <li>The application must exist within ITSM before this request can be submitted.</li>
+                  <li>The project selected must be in an Execution Phase in order to fulfill Infrastructure Service Requests.</li>
+                  <li><span class="red">Please attach the<span class="blue"> Data Classification, Server Diagram and System Context Diagram</span> before you submit this request!</span></li>
+                  <li><i><b>If critical information is not filled out your request may be delayed or rejected pending additional information.</b></i></li>
 
-            </div>
-            <div class="engineering-2">
+                  <li class="indent pad"><span class="grey">Service Item Description:</span> Use this Request for Engineering Intake</li>
+                  <li class="indent"><span class="grey">Service Item Owner:</span> David Jenkins</li>
+                  <li class="indent"><span class="grey">Service Item Owner Phone:</span> 518-473-8219</li>
+                  <li class="indent"><span class="grey">Service Item Owner Email:</span> David.Jenkins@its.ny.gov</li>
+                  <li class="indent"><span class="grey">Service Level Objective:</span> The base Service Level Objective is to respond to an engineering request within<span><b> 5 Business Days</b></span></li>
+                  <li class="indent"><span class="grey">In Scope Items:</span> Requesting build and deployment of Enterprise Services</li>
+                  <li class="indent"><span class="grey">Out of Scope Items:</span> Customer Network Request, Technology Advisments and Procument of Equipment</li>
+                  <li class="indent"><span class="grey">Availability:</span> This form is limited to authorized requestors only</li>
+                  <li class="indent"><span class="grey">Recovery Time Objective:</span> Dependent on Service Now Availability</li>
+                  <li class="indent"><span class="grey">Supporting Services Offered:</span> None</li>
+                </ul>
+              </div>
 
+              <div class="contact">
+                <form>
+                  <p class="full top-border">
+                    <label><i class="red fa fa-asterisk"></i> Short Description (Max 80 Characters):</label>
+                    <input type="text" name="des-s">
+                  </p>
+                  <p class="full">
+                    <label>Description:</label>
+                    <input type="text" name="des-l">
+                  </p>
+                  <p class="full">
+                    <label><i class="red fa fa-asterisk"></i> Requested For:</label>
+                    <input type="text" name="requested-for">Type the username into the textbox or click the 'Import User' icon to search the system for additional known users. Once a valid user is entered, an additional icon appears that permits you to Hover your mouse pointer and see additional user information. Holding down the SHIFT key will keep the additional information window open unitl closed.
+                  </p>
+                  <p class="full">
+                    <label><i class="fa fa-square-o"></i> Check if also Primary Contact</label>
+                  </p>
+                  <p class="full">
+                    <label><i class="fa fa-square-o"></i> Check if Requested For Contact not found</label>
+                  </p>
+                  <p class="full top-border">
+                    <label><i class="red fa fa-asterisk"></i> Primary Contact:</label>
+                    <input type="text" name="primary-contact">Update if the Primary Contact is different from the Requested For.
+                  </p>
+                  <p class="full">
+                    <label><i class="fa fa-square-o"></i> Check if Primary Contact is not found</label>
+                  </p>
+                  <p class="full top-border">
+                    <label><i class="red fa fa-asterisk"></i> Alternate Contact:</label>
+                    <input type="text" name="alternate-contact">Please provide an Alternate Contact if the Primary Contact is unavailable.
+                  </p>
+                  <p class="full">
+                    <label><i class="fa fa-square-o"></i> Check if Alternate Contact is not found</label>
+                  </p>
+                  <p class="full top-border">
+                    <label><i class="red fa fa-asterisk"></i> Technical Contact:</label>
+                    <input type="text" name="tech-contact">Includes Application Contact, ISO Contact, Testing Contact, Ect.
+                  </p>
+                  <p class="full bottom-border">
+                    <label><i class="fa fa-square-o"></i> Check if Technical Contact is not found</label>
+                  </p>
+                  <p>
+                    <label><i class="red fa fa-asterisk"></i> Name of Application:</label>
+                    <input type="text" name="app-name">
+                  </p>
+                  <p>
+                    <label>Application ID:</label>
+                    <input type="text" name="app-id">
+                  </p>
+                  <p>
+                    <label></label>
+                  </p>
+                  <p>
+                    <label>Support Group:</label>
+                    <input type="text" name="support-group">
+                  </p>
+                  <p>
+                    <label><i class="red fa fa-asterisk"></i> Project Name:</label>
+                    <input type="text" name="prj-name">Only Project Numbers with a Phase in Execution will be displayed or allowed to be selected (i.e. Execution - Development or Execution - Implementations, ect.)
+                  </p>
+                  <p>
+                    <label>Number:</label>
+                    <input type="text" name="number">
+                  </p>
+                  <p>
+                    <label><i class="fa fa-square-o"></i> Direct Bill Customer</label>
+                  </p>
+                  <p>
+                    <label>Cluster:</label>
+                    <input type="text" name="cluster">
+                  </p>
+                  <p>
+                    <label></label>
+                  </p>
+                  <p>
+                    <label>Agency:</label>
+                    <input type="text" name="agency">
+                  </p>
+                  <p class="full bottom-border">
+                    <label></label>
+                  </p>
+                  <p>
+                    <label><i class="red fa fa-asterisk"></i> Anticipated Project Completion Date:</label>
+                    <input type="text" name="prj-done">
+                  </p>
+                  <p>
+                    <label><i class="red fa fa-asterisk"></i> Review Completed By:</label>
+                    <input type="text" name="review-done">
+                  </p>
+                  <p>
+                    <label>Dev System Delivery Needed By:</label>
+                    <input type="text" name="dev">Please provide the date you need the environment ready for agency use.
+                  </p>
+                  <p>
+                    <label>Test System Delivery Needed By:</label>
+                    <input type="text" name="test">Please provide the date you need the environment ready for agency use.
+                  </p>
+                  <p>
+                    <label>QA System Delivery Needed By:</label>
+                    <input type="text" name="qa">Please provide the date you need the environment ready for agency use.
+                  </p>
+                  <p>
+                    <label>Staging System Delivery Needed By:</label>
+                    <input type="text" name="staging">Please provide the date you need the environment ready for agency use.
+                  </p>
+                  <p>
+                    <label>PROD System Delivery Needed By:</label>
+                    <input type="text" name="prod">Please provide the date you need the environment ready for agency use.
+                  </p>
+                  <p>
+                    <button type="button" name="button">Choose Service Offering <i class="fa fa-arrow-circle-right"></i></button>
+                  </p>
+                </form>
+              </div>
             </div>
-            <div class="engineering-2">
-
-            </div>
-            <div class="engineering-3">
-
-            </div>
-            <div class="engineering-3">
-
-            </div>
+          </div>
         </div>
 
         <button class="accordion">Choose Service Offering</button>
         <div class="panel">
           <div class="choose-service">
-
+            <select class="dropdown">
+              <option value="linux">Linux Server Offerings</option>
+              <option value="unix">Unix Server Offerings</option>
+              <option value="zos">z/OS Server Offerings</option>
+              <option value="windows">Windows Server Offerings</option>
+              <option value="hp">HP Unix Server Offerings</option>
+            </select>
+            <div class="contact">
+              <form class="service">
+                <p>
+                  <img id="lBtn" src="img/linux.png" alt="">
+                </p>
+                <p>
+                  <img id="uBtn" src="img/unix.png" alt="">
+                </p>
+                <p>
+                  <img src="img/zos.png" alt="">
+                </p>
+                <p>
+                  <img src="img/windows.png" alt="">
+                </p>
+                <p>
+                  <img src="img/hp.png" alt="">
+                </p>
+                <p>
+                  <button type="button" name="button">Review Your Order <i class="fa fa-arrow-circle-right"></i></button>
+                </p>
+              </form>
+            </div>
           </div>
         </div>
 
         <button class="accordion">Review Your Order</button>
         <div class="panel">
           <div class="review-order">
-
+            <div class="contact">
+              <img src="img/completeOrder.png" alt="">
+            </div>
           </div>
         </div>
 
         <button class="accordion">Complete Your Order</button>
         <div class="panel">
           <div class="complete-order">
-
+            <div class="contact">
+              <img src="img/finish.png" alt="">
+            </div>
           </div>
         </div>
       </article>
 
       <aside class="sidebar">
         <div class="dark">
-          <h2><i class="fa fa-shopping-cart"> Shopping Cart</i></h2>
+          <h2><i class="fa fa-shopping-cart"></i> Shopping Cart</h2>
         </div>
         <div class="cart">
-          <h3>There Are No Items In Your Cart</h3>
+          <div class="contact">
+            <img src="img/shoppingCart.png" alt="">
+          </div>
         </div>
         <div class="price">
-          <h3>Total Price: <span class="shopping-price">$0.00</span></h3>
+          <h3>Total Price: <span class="shopping-price">$3,500.38</span></h3>
         </div>
       </aside>
     </div>
   </section>
+
+  <div id="lModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="img/linuxModal.png" alt="">
+    </div>
+  </div>
+
+  <div id="uModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="img/unixModal.png" alt="">
+    </div>
+  </div>
 
 
 
@@ -129,6 +280,36 @@
           panel.style.display = "block";
         }
       }
+    }
+
+    var linux_modal = document.getElementById('lModal');
+    var linux_btn = document.getElementById("lBtn");
+    var unix_modal = document.getElementById('uModal');
+    var unix_btn = document.getElementById("uBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    linux_btn.onclick = function() {
+        linux_modal.style.display = "block";
+    }
+
+    unix_btn.onclick = function() {
+        unix_modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        linux_modal.style.display = "none";
+    }
+
+    span.onclick = function() {
+        unix_modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == linux_modal) {
+          linux_modal.style.display = "none";
+        } else if (event.target == unix_modal) {
+          unix_modal.style.display = "none";
+        }
     }
   </script>
 </body>
